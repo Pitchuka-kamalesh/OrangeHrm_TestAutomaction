@@ -3,6 +3,8 @@ package com.cumcumberlearnings.pageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class forgotPassword {
     WebDriver driver;
@@ -12,7 +14,7 @@ public class forgotPassword {
 
     By message_header = By.tagName("h6");
 
-    By required_field = By.className("ymqHP ExcM8");
+    By required_field = By.tagName("span");
 
     public forgotPassword(WebDriver driver) {
         this.driver = driver;
@@ -20,21 +22,22 @@ public class forgotPassword {
 
 
     public void clickResetPasswordButton(){
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(reset_password_button).click();
     }
 
     public void clickForgotPassword(){
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(forgot_password_link).click();
     }
 
     public String getMessageHeaderText(String valid) {
         WebElement headerElement;
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         if (valid.equals("valid")){
             headerElement = driver.findElement(message_header);
 
         } else {
-
-
             headerElement = driver.findElement(required_field);
 
             }
