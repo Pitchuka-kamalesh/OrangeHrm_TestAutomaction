@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber-reports/cucumber.json"
         },
         features = {"src/test/resources/features"},
-        glue = {"com.cumcumberlearnings.StepDefinitions","com.cumcumberlearnings.commons"}
+        glue = {"com.cumcumberlearnings.StepDefinitions","com.cumcumberlearnings.Common"}
 //        tags = "@BeforeTest"
 )
 

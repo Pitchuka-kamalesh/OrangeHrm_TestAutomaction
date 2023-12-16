@@ -1,11 +1,10 @@
 package com.cumcumberlearnings.StepDefinitions;
 
 import com.cumcumberlearnings.pageObject.loginPage;
-import common.BaseClass;
+import com.cumcumberlearnings.Common.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 public class LoginStepDefinitions extends BaseClass {

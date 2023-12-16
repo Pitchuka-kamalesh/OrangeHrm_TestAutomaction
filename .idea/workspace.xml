@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="901bfbbf-ec44-43e2-86f4-efb20e299466" name="Changes" comment="changed the files">
-      <change afterPath="$PROJECT_DIR$/src/test/java/common/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/common/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/StepDefinitions/BaseTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/StepDefinitions/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/StepDefinitions/LoginStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/StepDefinitions/resetpasswordStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/StepDefinitions/resetpasswordStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/pageObject/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/pageObject/loginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/common/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/Common/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/common/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/Common/Hooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +62,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="common" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="C:/Users/kamal/IdeaProjects/learning/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="learning" />
@@ -130,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702658613825</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed the files">
+      <option name="closed" value="true" />
+      <created>1702711081088</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702711081089</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,6 +156,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/Common/Hooks.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

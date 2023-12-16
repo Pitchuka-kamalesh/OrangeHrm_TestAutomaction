@@ -1,4 +1,4 @@
-package common;
+package com.cumcumberlearnings.Common;
 
 import org.openqa.selenium.WebDriver;
 

@@ -1,13 +1,11 @@
-package common;
+package com.cumcumberlearnings.Common;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.openqa.selenium.chrome.ChromeDriver;
-import common.BaseClass;
+import com.cumcumberlearnings.Common.BaseClass;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import java.util.concurrent.TimeUnit;
 
 public class Hooks extends BaseClass {
-
 
     @Before
     public static void setupDriver() throws InterruptedException{
