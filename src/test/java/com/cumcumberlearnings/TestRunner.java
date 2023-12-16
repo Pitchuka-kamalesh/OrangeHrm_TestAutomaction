@@ -8,11 +8,13 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber-reports/cucumber.json"
         },
         features = {"src/test/resources/features"},
-        glue = {"com.cumcumberlearnings.StepDefinitions"}
+        glue = {"com.cumcumberlearnings.StepDefinitions","com.cumcumberlearnings.commons"}
 //        tags = "@BeforeTest"
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
+
+
 
 
 

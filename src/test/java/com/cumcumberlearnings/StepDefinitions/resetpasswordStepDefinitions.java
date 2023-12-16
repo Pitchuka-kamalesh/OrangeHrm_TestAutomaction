@@ -2,6 +2,7 @@ package com.cumcumberlearnings.StepDefinitions;
 
 import com.cumcumberlearnings.pageObject.forgotPassword;
 import com.cumcumberlearnings.pageObject.loginPage;
+import common.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -12,17 +13,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
-public class resetpasswordStepDefinitions {
+public class resetpasswordStepDefinitions extends BaseClass {
 
-    WebDriver driver;
     loginPage login;
     forgotPassword forgotpassword;
-    @Before
-    public void openTheApplication() {
-        driver = new FirefoxDriver();
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        driver.manage().window().maximize();
-    }
+//    @Before
+//    public void openTheApplication() {
+//        driver = new FirefoxDriver();
+//        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//        driver.manage().window().maximize();
+//    }
 
 
     @Given("I am on the Orange HRM login pages")
@@ -56,11 +56,11 @@ public class resetpasswordStepDefinitions {
 
         
     }
-    @After
-    public void tearDown(){
-        driver.quit();
-
-    }
+//    @After
+//    public void tearDown(){
+//        driver.quit();
+//
+//    }
 
 
 
