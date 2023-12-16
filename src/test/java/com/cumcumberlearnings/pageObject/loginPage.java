@@ -43,7 +43,7 @@ public class loginPage extends BaseClass {
 
     }
     public String validate_Error_Cred(String type){
-        String error = null;
+        String error;
         if (type.equals("valid")){
             error = driver.findElement(login_header).getText();
 
