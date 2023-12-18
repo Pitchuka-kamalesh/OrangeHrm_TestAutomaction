@@ -7,16 +7,12 @@ import java.util.concurrent.TimeUnit;
 
 public class loginPage extends BaseClass {
 
-
-
-    By user_name = By.name("username");
-    By password_id = By.name("password");
-    By login_button = By.className("oxd-button");
-
-    By error_alert = By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]");
-
-    By required_field = By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/span");
-    By login_header = By.tagName("h6");
+    private final By user_name = By.xpath("//input[@name='username']");
+    private final By password_id = By.xpath("//input[@name='password']");
+    private final By login_button = By.xpath("//button[@type='submit']");
+    private final By error_alert = By.xpath("//p[@class = 'oxd-text oxd-text--p oxd-alert-content-text']");
+    private final By required_field = By.tagName("span");
+    private final By login_header = By.tagName("h6");
 
     public loginPage(WebDriver driver) {
         BaseClass.driver = driver;

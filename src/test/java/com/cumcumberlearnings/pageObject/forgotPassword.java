@@ -9,12 +9,12 @@ import java.util.concurrent.TimeUnit;
 public class forgotPassword {
     WebDriver driver;
 
-    By forgot_password_link = By.xpath("//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[4]/p[1]");
-    By reset_password_button = By.xpath("//body/div[@id='app']/div[1]/div[1]/div[1]/form[1]/div[2]/button[2]");
+   private final By forgot_password_link = By.xpath("//p[@class = 'oxd-text oxd-text--p orangehrm-login-forgot-header']");
+   private final By reset_password_button = By.xpath("//button[@type='submit']");
 
-    By message_header = By.tagName("h6");
+    private final By message_header = By.tagName("h6");
 
-    By required_field = By.tagName("span");
+    private final By required_field = By.tagName("span");
 
     public forgotPassword(WebDriver driver) {
         this.driver = driver;

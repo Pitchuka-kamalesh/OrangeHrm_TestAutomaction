@@ -12,15 +12,6 @@ public class LoginStepDefinitions extends BaseClass {
     loginPage login;
 
 
-//    @Given("I am on the Orange HRM login page")
-//    public void iAmOnTheOrangeHRMLoginPage() {
-//        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-//        String title = driver.getTitle();
-//        Assert.assertTrue(true);
-//
-//    }
-
-
     @Given("I have enter {string} and {string}")
     public void iHaveEnterAnd(String username, String password) throws InterruptedException {
         login = new loginPage(driver);
