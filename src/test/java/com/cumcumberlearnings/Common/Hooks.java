@@ -5,6 +5,8 @@ import io.cucumber.java.Before;
 import com.cumcumberlearnings.Common.BaseClass;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Hooks extends BaseClass {
 
     @Before
@@ -13,6 +15,7 @@ public class Hooks extends BaseClass {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 

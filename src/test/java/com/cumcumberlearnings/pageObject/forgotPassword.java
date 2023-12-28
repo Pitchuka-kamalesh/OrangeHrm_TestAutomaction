@@ -22,7 +22,6 @@ public class forgotPassword {
 
 
     public void clickResetPasswordButton(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(reset_password_button).click();
     }
 

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="901bfbbf-ec44-43e2-86f4-efb20e299466" name="Changes" comment="changed the files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/StepDefinitions/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/StepDefinitions/LoginStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/Common/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/Common/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/pageObject/forgotPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/pageObject/forgotPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/pageObject/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/pageObject/loginPage.java" afterDir="false" />
     </list>
@@ -154,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702714208287</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="changed the files">
+      <option name="closed" value="true" />
+      <created>1702917413765</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702917413765</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -171,7 +179,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/cumcumberlearnings/Common/Hooks.java</url>
-          <line>9</line>
+          <line>11</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

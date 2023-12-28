@@ -16,16 +16,16 @@ public class loginPage extends BaseClass {
 
     public loginPage(WebDriver driver) {
         BaseClass.driver = driver;
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
 
     public void enterUsername(String username){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(user_name).sendKeys(username);
     }
     public void enterPassword(String password){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(password_id).sendKeys(password);
     }
     public void clickLogin(){
