@@ -3,11 +3,18 @@ package com.cumcumberlearnings.Common;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import com.cumcumberlearnings.Common.BaseClass;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.io.FileHandler;
 
 import java.util.concurrent.TimeUnit;
 
 public class Hooks extends BaseClass {
+
+
 
     @Before
     public static void setupDriver() throws InterruptedException{
@@ -20,7 +27,18 @@ public class Hooks extends BaseClass {
     }
 
     @After
-    public static void teardown() throws Exception{
+    public static void teardown(Scenario scenario) throws Exception{
+
+        if(scenario.isFailed()){
+//            JavascriptExecutor js = (JavascriptExecutor)driver;
+//            js.executeScript(
+//                    "arguments[0].style.border = '3px solid red'",
+//                    scenario);
+
+            final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", "test failed");
+        }
+
         System.out.println("Closing the browser instances");
         driver.quit();
     }
