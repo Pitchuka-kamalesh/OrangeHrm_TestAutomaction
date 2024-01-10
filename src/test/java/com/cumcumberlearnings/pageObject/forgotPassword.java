@@ -33,7 +33,7 @@ public class forgotPassword {
     public String getMessageHeaderText(String valid) {
         WebElement headerElement;
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        if (valid.equals("valid")){
+        if (valid.equalsIgnoreCase("valid")){
             headerElement = driver.findElement(message_header);
 
         } else {

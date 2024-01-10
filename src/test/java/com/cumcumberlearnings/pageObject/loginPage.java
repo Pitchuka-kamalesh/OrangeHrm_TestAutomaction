@@ -16,7 +16,7 @@ public class loginPage extends BaseClass {
 
     public loginPage(WebDriver driver) {
         BaseClass.driver = driver;
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
 
@@ -39,21 +39,15 @@ public class loginPage extends BaseClass {
 
     }
     public String validate_Error_Cred(String type){
-        String error;
-        if (type.equals("valid")){
-            error = driver.findElement(login_header).getText();
-
-        } else {
-            try {
-                error = driver.findElement(error_alert).getText();
-
-            }catch (Exception e){
+        String error = null;
+        switch (type){
+            case "valid":
+                error = driver.findElement(login_header).getText();
+                break;
+            case "invalid":
                 error = driver.findElement(required_field).getText();
-                System.out.println("Print exception"+e);
-            }
-
+                break;
         }
-
         return error;
     }
 
